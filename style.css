@@ -1,0 +1,49 @@
+body {
+    background-color: #D1D8E0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+  }
+  
+  .div_body {
+    background-color: #3498DB;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .div_practicas ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .div_practicas ul li {
+    margin-bottom: 10px;
+  }
+  
+  .div_practicas ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  .div_practicas ul li a span {
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .div_practicas ul li a:hover span {
+    background-color: #FFFFFF;
+    color: #3498DB;
+  }
+  
+  .div_titulo h1 {
+    color: #3498DB;
+    margin-top: 30px;
+  }
