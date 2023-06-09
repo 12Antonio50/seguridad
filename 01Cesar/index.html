@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado César y Vigenère</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Cifrado César y Vigenère</h1>
+    <br>
+    <br>
+    <div class="container">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="3"></textarea>
+        <label for="clave">Clave:</label>
+        <input type="text" id="clave">
+        <button onclick="cifrar()">Cifrar</button>
+        <label for="resultado">Resultado:</label>
+        <textarea id="resultado" rows="3" readonly></textarea>
+    </div>
+
+    <script src="./JS/cesar.js"></script>
+</body>
+</html>
