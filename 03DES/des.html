@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de cifrado DES</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="des.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Cifrado DES</h1>
+        <form id="formulario-encriptacion" enctype="multipart/form-data" class="mt-5">
+            <div class="mb-3">
+                <label for="input-archivo" class="form-label">Selecciona un archivo:</label>
+                <input type="file" class="form-control" id="input-archivo" accept=".txt" required>
+            </div>
+            <div class="mb-3">
+                <label for="clave-encriptacion" class="form-label">Clave (8 caracteres):</label>
+                <input type="text" class="form-control" id="clave-encriptacion" minlength="8" maxlength="8" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="cifrar()">Cifrar</button>
+        </form>
+
+        <form id="formulario-desencriptacion" enctype="multipart/form-data" class="mt-5">
+            <div class="mb-3">
+                <label for="input-archivo-encriptado" class="form-label">Selecciona el archivo cifrado:</label>
+                <input type="file" class="form-control" id="input-archivo-encriptado" accept=".txt" required>
+            </div>
+            <div class="mb-3">
+                <label for="clave-desencriptacion" class="form-label">Clave (8 caracteres):</label>
+                <input type="text" class="form-control" id="clave-desencriptacion" minlength="8" maxlength="8" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="descifrar()" >Descifrar</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="Des.js"></script>
+</body>
+</html>
